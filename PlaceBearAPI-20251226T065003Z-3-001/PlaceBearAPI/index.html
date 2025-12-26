@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlaceBear API Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="placebear-app">
+    <div class="theme-toggle" id="themeToggle" title="Toggle light/dark mode"></div>
+    <h1>PlaceBear API Demo</h1>
+    <form id="bearForm">
+      <label for="width">Width:</label>
+      <input type="number" id="width" min="100" max="1000" value="400" required>
+      <label for="height">Height:</label>
+      <input type="number" id="height" min="100" max="1000" value="300" required>
+      <button type="submit">Show Bear</button>
+    </form>
+    <div class="bear-image-container">
+      <img id="bearImage" src="https://placebear.com/400/300" alt="Random Bear" />
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
